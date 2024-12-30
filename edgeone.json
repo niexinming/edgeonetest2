@@ -1,0 +1,12 @@
+{
+  
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/index",
+      "statusCode": 301
+    }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@
       ]
     },
     {
-      "routePath": "/",
+      "routePath": "/index",
       "mountPath": "/",
       "method": "",
       "module": [
