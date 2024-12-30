@@ -66,9 +66,8 @@
           }
         }
         if(!matchedFunc){
-          var myhtml="<h1>aaaa</h1>";
           pagesFunctionResponse = function() {
-            return new Response(myhtml, {
+            return new Response(null, {
               status: 404,
               headers: {
                 "content-type": "text/html; charset=UTF-8",
