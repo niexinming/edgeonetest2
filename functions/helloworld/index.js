@@ -1,3 +1,5 @@
+
+
 const json = JSON.stringify({
       "code": 0,
       "message": "Hello World"
@@ -5,6 +7,8 @@ const json = JSON.stringify({
 
 
 export function onRequest(context) {
+ console.log(globalThis)
+
   return new Response(json, {
     headers: {
       'content-type': 'text/html; charset=UTF-8',

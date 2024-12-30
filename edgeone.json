@@ -3,10 +3,9 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/index",
+      "destination": "/helloworld",
       "statusCode": 301
     }
       ]
-    }
-  ]
 }
+

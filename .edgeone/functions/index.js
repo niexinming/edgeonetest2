@@ -21,6 +21,7 @@
     "message": "Hello World"
   });
   function onRequest(context) {
+    console.log(globalThis);
     return new Response(json, {
       headers: {
         "content-type": "text/html; charset=UTF-8",
