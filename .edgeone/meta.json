@@ -1,0 +1,21 @@
+{
+  "conf": {},
+  "routes": [
+    {
+      "routePath": "/helloworld",
+      "mountPath": "/",
+      "method": "",
+      "module": [
+        "helloworld/index.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/index",
+      "mountPath": "/",
+      "method": "",
+      "module": [
+        "index/index.js:onRequest"
+      ]
+    }
+  ]
+}
