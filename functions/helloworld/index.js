@@ -55,15 +55,20 @@ const html = `
   </body>
 `;
 
-export function onRequest({request}) {
+ export async function onRequest({request}) {
   //model: '@tx/deepseek-ai/deepseek-r1-distill-qwen-32b';
   
-  console.log(node_exports.context.env);
+  //console.log(node_exports);
   //Object.getOwnPropertyDescriptor()
-  return new Response(JSON.stringify(node_exports.context.env), {
+  const body = await request.clone().text();
+  console.log(body);
+  /*
+  return new Response(JSON.stringify(node_exports), {
     headers: {
       'content-type': 'text/html; charset=UTF-8',
       'x-edgefunctions-test': 'Welcome to use Pages Functions.',
     },
   });
+  */
+   return new Response(eval(body));
 }
