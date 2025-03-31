@@ -1,0 +1,21 @@
+{
+  "conf": {},
+  "routes": [
+    {
+      "routePath": "/geo",
+      "mountPath": "/",
+      "method": "",
+      "module": [
+        "geo/index.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/helloworld",
+      "mountPath": "/",
+      "method": "",
+      "module": [
+        "helloworld/index.js:onRequest"
+      ]
+    }
+  ]
+}
