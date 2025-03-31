@@ -1,3 +1,4 @@
+
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -44,7 +45,7 @@ __export(node_exports, {
   version: () => version
 });
 //module.exports = __toCommonJS(node_exports);
-__toCommonJS(node_exports);
+//__toCommonJS(node_exports);
 
 const html = `
   <!DOCTYPE html>
@@ -57,9 +58,9 @@ const html = `
 export function onRequest({request}) {
   //model: '@tx/deepseek-ai/deepseek-r1-distill-qwen-32b';
   
-  console.log(node_exports);
+  console.log(node_exports.context.env);
   //Object.getOwnPropertyDescriptor()
-  return new Response(html, {
+  return new Response(JSON.stringify(node_exports.context.env), {
     headers: {
       'content-type': 'text/html; charset=UTF-8',
       'x-edgefunctions-test': 'Welcome to use Pages Functions.',
