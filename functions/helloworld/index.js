@@ -56,7 +56,7 @@ const html = `
 `;
 
  export async function onRequest({request}) {
-  //model: '@tx/deepseek-ai/deepseek-r1-distill-qwen-32b';
+  ///model: '@tx/deepseek-ai/deepseek-r1-distill-qwen-32b';
   
   //console.log(node_exports);
   //Object.getOwnPropertyDescriptor()
