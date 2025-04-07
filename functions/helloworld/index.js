@@ -45,7 +45,7 @@ __export(node_exports, {
   version: () => version
 });
 //module.exports = __toCommonJS(node_exports);
-//__toCommonJS(node_exports);
+///__toCommonJS(node_exports);
 
 const html = `
   <!DOCTYPE html>
